@@ -32,7 +32,7 @@ h2 {
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -79,6 +79,9 @@ a {
 .gray {
     color:
         rgba(85, 85, 85, 1);
+}
+.black{
+    color: black;
 }
 
 /* styles for all end */
@@ -197,7 +200,7 @@ header {
 .beauty-left-content {
     max-width: 450px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 40px 0;
 }
 
 .beauty-left-content h5 {
@@ -271,6 +274,48 @@ header.fixed {
 }
 
 /* beauty is power end */
+
+
+/* beauty cards start */
+.beauty-card .card-link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+.card-container {
+    padding: 40px 0;
+    
+}
+
+.beauty-card {
+    max-width: 300px;
+    gap: 10px;
+    position: relative;
+}
+
+.beauty-card img {
+    width: 100%;
+}
+
+.beauty-card-txt h4 {
+    font-family: PlayfairDisplay;
+}
+
+.btn-empty {
+    border: 2px solid rgba(92, 134, 146, 1);
+    padding: 9px 30px;
+    width: 55%;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* beauty cards end */
 
 
 /* ____________________responsive___________________ */
@@ -629,4 +674,5 @@ header.fixed {
         left: -20px;
     }
 }
+
 /* beauty end */
