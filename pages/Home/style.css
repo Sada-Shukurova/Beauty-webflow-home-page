@@ -80,7 +80,8 @@ a {
     color:
         rgba(85, 85, 85, 1);
 }
-.black{
+
+.black {
     color: black;
 }
 
@@ -90,6 +91,15 @@ a {
 header {
     padding: 30px 40px;
     margin: 0 auto;
+    transition: all 1.3s ease-out;
+}
+
+header.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background: #fff;
+    top: 0;
 }
 
 .header-container {
@@ -160,11 +170,18 @@ header {
     padding: 10px 25px;
     color: white;
     gap: 10px;
+    transition: all 1.1s ease-in-out;
 }
 
 .reservation p {
     display: inline-block;
     margin: 0;
+}
+
+.reservation:hover {
+    color: black;
+    font-weight: bold;
+    background-color: rgba(122, 156, 165, 0.7);
 }
 
 #menu {
@@ -222,13 +239,20 @@ header {
     background-color: rgba(92, 134, 146, 1);
     color: white;
     gap: 5px;
-    padding: 10px 15px;
+    padding: 15px 20px;
     margin-top: 10px;
+    transition: all 1.1s ease-in-out;
 }
 
 .btn-dark p {
-    font-size: 10px;
+    font-size: 14px;
     margin: 0 auto;
+}
+
+.btn-dark:hover {
+    color: black;
+    font-weight: bold;
+    background-color: rgba(92, 134, 146, 0.6);
 }
 
 /* right */
@@ -265,36 +289,39 @@ header {
     z-index: 1;
 }
 
-header.fixed {
-    position: fixed;
-    width: 100%;
-    z-index: 99;
-    background: #fff;
-    top: 0;
-}
+
 
 /* beauty is power end */
 
 
 /* beauty cards start */
-.beauty-card .card-link{
+.beauty-card .card-link {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 80%;
     top: 0;
     left: 0;
     z-index: 1;
     cursor: pointer;
 }
+
 .card-container {
-    padding: 40px 0;
-    
+    padding: 50px 0;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .beauty-card {
     max-width: 300px;
     gap: 10px;
     position: relative;
+    padding: 10px;
+    border-radius: 2px;
+    transition: 0.3s all ease-in-out;
+}
+
+.beauty-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .beauty-card img {
@@ -312,16 +339,33 @@ header.fixed {
     font-weight: bold;
     text-align: center;
     cursor: pointer;
+    transition: all 1s ease-in-out;
 }
 
+.btn-empty {
+    transition: all 1s ease-in-out;
+}
+
+.btn-empty:hover {
+    background-color: rgba(92, 134, 146, 1);
+}
+
+.btn-empty:hover a {
+    color: white;
+}
 
 /* beauty cards end */
+
 
 
 /* ____________________responsive___________________ */
 @media only screen and (max-width: 1189px) {
 
     /* header and navigation start */
+    .container {
+        max-width: 1000px;
+    }
+
     header {
         padding: 20px 30px;
     }
@@ -348,6 +392,10 @@ header.fixed {
 @media only screen and (max-width: 1111px) {
 
     /* header and navigation start */
+    .container {
+        max-width: 950px;
+    }
+
     .header-container {
         gap: 8px;
     }
@@ -369,11 +417,14 @@ header.fixed {
     }
 
     /* header and navigation end */
+    .beauty-left-content {
+        margin-left: 40px;
+    }
 }
 
 @media only screen and (max-width: 1027px) {
     .container {
-        max-width: 960px;
+        max-width: 800px;
     }
 
     /* header and navigation start */
@@ -399,11 +450,18 @@ header.fixed {
 
 
     /* header and navigation end */
+    .card-container {
+        justify-content: space-evenly;
+    }
 }
 
 @media only screen and (max-width: 925px) {
 
     /* header and navigation start */
+    .container {
+        max-width: 800px;
+    }
+
     .social-container {
         gap: 8px;
     }
@@ -421,6 +479,12 @@ header.fixed {
     }
 
     /* header and navigation end*/
+}
+
+@media only screen and (max-width: 870px) {
+    .container {
+        max-width: 700px;
+    }
 }
 
 /* Tablet */
@@ -555,6 +619,24 @@ header.fixed {
 }
 
 /* Mobile */
+@media only screen and (max-width: 650px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    .beauty-card {
+        max-width: 450px;
+    }
+
+    .beauty-card * {
+        text-align: center;
+    }
+
+    .btn-empty {
+        align-self: center;
+    }
+}
+
 @media only screen and (max-width: 565px) {
 
     /* header and navigation start */
@@ -612,6 +694,7 @@ header.fixed {
     .beauty-is-right {
         width: 100%;
         padding: 0;
+        background-color: transparent;
     }
 
     .beauty-left-content {
@@ -649,11 +732,16 @@ header.fixed {
         position: relative;
     }
 
+    .beauty-card {
+        max-width: 90%;
+    }
 
-
-    /* beauty is end */
+    .btn-empty {
+        min-width: 90%;
+    }
 }
 
+/* beauty is end */
 
 @media only screen and (max-width: 370px) {
 
