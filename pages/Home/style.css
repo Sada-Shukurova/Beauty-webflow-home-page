@@ -22,8 +22,13 @@
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: PlayfairDisplay-Bold, serif !important;
+}
+
+a {
+    color: black;
 }
 
 p.gray {
@@ -104,8 +109,9 @@ header {
 header.fixed {
     position: fixed;
     width: 100%;
-    z-index: 99;
-    background: #fff;
+    z-index: 100;
+    background-color: 
+rgba(235, 243, 245, 1);
     top: 0;
 }
 
@@ -317,7 +323,7 @@ header.fixed {
 .card-container {
     padding: 50px 0;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 10px;
 }
 
 .beauty-card {
@@ -425,7 +431,131 @@ header.fixed {
 
 /* about us end */
 
+/* services start */
+.services {
+    padding: 40px 0;
+}
 
+.services-heading {
+    text-align: center;
+}
+
+.services-heading h2 {
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+
+.services-sections-container {
+    position: relative;
+    z-index: 99;
+}
+
+.services-up-img,
+.services-down-img {
+    line-height: 0;
+}
+
+.services-up {
+    padding-top: 30px;
+    position: relative;
+    z-index: 70;
+}
+
+.services-up-img {
+    max-width: 50%;
+}
+
+.services-up-img img {
+    width: 100%;
+}
+
+.services-up-txt {
+    max-width: 50%;
+    gap: 5px;
+}
+
+.first-line {
+    max-width: 500px;
+    border-bottom: 1px solid rgba(155, 183, 191, 1);
+}
+
+.first-line span {
+    font-family: PlayfairDisplay, serif;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.masks::after {
+    content: ' ............................................. ';
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.masks-p {
+    margin: 0 0 8px 0;
+}
+
+.full-body::after {
+    content: ' .................................. ';
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.geothermal::after {
+    content: ' ....................................... ';
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.sauna::after {
+    content: ' .............................................. ';
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.appointment {
+    padding: 15px 25px;
+}
+
+.services-down {
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 80;
+}
+
+.services-down-img {
+    max-width: 50%;
+}
+
+.services-down-img img {
+    width: 100%;
+}
+
+.services-down-txt {
+    max-width: 50%;
+    gap: 10px;
+    z-index: 99;
+    margin-top: 40px;
+}
+
+
+
+.services-sections-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background-color:
+        rgba(19, 66, 54, 1);
+    z-index: 10;
+}
+
+/* services end */
 
 /* ____________________responsive___________________ */
 @media only screen and (max-width: 1189px) {
@@ -457,6 +587,37 @@ header.fixed {
 
     /* header and navigation end */
 
+    /* services */
+    .services-up-txt,
+    .services-down-txt {
+        max-height: 500px;
+    }
+
+    .masks-p {
+        margin-bottom: 0;
+    }
+    .services-sections-container::after {
+        width: 100px;
+        height: 100px;
+    }
+    .services-up-txt,.services-down-txt{
+        max-width: 42%;
+    }
+    .services-down-txt{
+        margin-top: 0;
+    }
+    .masks::after{
+        content: ' .................................. ';
+    }
+    .full-body::after{
+        content: " ...................... ";
+    }
+    .geothermal::after{
+        content: ' ........................... ';
+    }
+    .sauna::after{
+        content: ' ................................... ';
+    }
 
 }
 
