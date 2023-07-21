@@ -27,6 +27,10 @@ h3 {
     font-family: PlayfairDisplay-Bold, serif !important;
 }
 
+h2{
+    font-size: 2rem;
+}
+
 a {
     color: black;
 }
@@ -88,6 +92,10 @@ a {
     color: rgba(92, 134, 146, 1);
 }
 
+.bg-blue {
+    background-color: rgba(92, 134, 146, 1);
+}
+
 .gray {
     color:
         rgba(85, 85, 85, 1);
@@ -97,21 +105,26 @@ a {
     color: black;
 }
 
+.green {
+    background-color: rgba(30, 44, 48, 1);
+}
+
+
 /* styles for all end */
 
 /* header start */
 header {
     padding: 30px 40px;
     margin: 0 auto;
-    transition: all 1.5s ease-in-out;
+    transition: all 1.2s ease-in-out;
 }
 
 header.fixed {
     position: fixed;
     width: 100%;
     z-index: 100;
-    background-color: 
-rgba(235, 243, 245, 1);
+    background-color:
+        rgba(235, 243, 245, 1);
     top: 0;
 }
 
@@ -183,7 +196,7 @@ rgba(235, 243, 245, 1);
     padding: 10px 25px;
     color: white;
     gap: 10px;
-    transition: all 1.1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .reservation p {
@@ -256,7 +269,7 @@ rgba(235, 243, 245, 1);
     gap: 5px;
     padding: 15px 20px;
     margin-top: 10px;
-    transition: all 1.1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .btn-dark p {
@@ -332,7 +345,7 @@ rgba(235, 243, 245, 1);
     position: relative;
     padding: 10px;
     border-radius: 2px;
-    transition: 0.3s all ease-in-out;
+    transition: 0.5s all ease-in-out;
 }
 
 .beauty-card:hover {
@@ -354,11 +367,7 @@ rgba(235, 243, 245, 1);
     font-weight: bold;
     text-align: center;
     cursor: pointer;
-    transition: all 1s ease-in-out;
-}
-
-.btn-empty {
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .btn-empty:hover {
@@ -450,6 +459,7 @@ rgba(235, 243, 245, 1);
 .services-sections-container {
     position: relative;
     z-index: 99;
+    margin-bottom: 40px;
 }
 
 .services-up-img,
@@ -557,6 +567,170 @@ rgba(235, 243, 245, 1);
 
 /* services end */
 
+
+/* testimonials start */
+.testimonials {
+    padding: 40px 0;
+}
+
+.testimonials-heading {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.testimonials-up p {
+    padding: 20px 30px;
+    line-height: 1.5;
+}
+
+.testimonials-content {
+    gap: 40px;
+}
+
+.testimonials-img img {
+    border: 2px solid white;
+}
+
+.testimonials-1,
+.testimonials-2 {
+    max-width: 50%;
+    background-color: white;
+    height: 100%;
+    padding: 0;
+}
+
+.testimonials-down {
+    color: white;
+    padding: 20px 30px;
+}
+
+.testimonials-down-left {
+    gap: 15px;
+}
+
+.testimonials-quote {
+    gap: 5px;
+}
+
+.testimonials-quote h3,
+h4 {
+    margin: 5px;
+}
+
+.stars svg path {
+    fill: white;
+}
+
+/* testimonials end */
+
+/* benefits start */
+.benefits-section {
+    padding: 30px;
+}
+
+.benefits-heading {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.benefits {
+    max-width: 280px;
+    align-items: flex-start;
+}
+
+.benefits-content {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.benefits h3 {
+    max-width: 75%;
+    line-height: 1.5;
+}
+
+.benefits-check {
+    width: 70px;
+    height: 70px;
+    border: 1px dashed;
+
+}
+
+.benefits-check svg {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.benefits-check svg path {
+    fill: white;
+}
+
+/* benefits end */
+
+/* discount start */
+.discount-section {
+    padding: 40px 0;
+}
+
+.discount-left {
+    max-width: 50%;
+    gap: 10px;
+}
+.discount-left h2{
+    width: 60%;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.discount-card{
+max-width: 90%;
+border: 1px solid rgba(149, 191, 203, 1);
+background-color: white;
+gap: 10px;
+}
+.discount-card-left{
+    padding: 5px;
+}
+
+.discount-card-right{
+    color: white;
+    padding: 20px 40px;
+}
+
+.number-50{
+margin: 15px 0;
+font-size: 50px;
+font-weight: 900;
+}
+.number-50 span{
+    font-size: 30px;
+    font-weight: 100;
+    }
+.discount-mailUs,.discount-callUs{
+    position: relative;
+}
+.discount-card-left-up *,.discount-card-left-down *{
+    padding-left: 30px;
+    margin-left: 20px;
+}
+
+.discount-mailUs::before,.discount-callUs::before{
+content: '...';
+display: inline-block;
+color: rgba(92, 134, 146, 1);
+font-size: 30px;
+font-family: serif;
+position: absolute;
+top: -16px;
+left: 0;
+}
+/*  */
+.discount-right{
+    max-width: 50%;
+    background-color: white;
+}
+/* discount end */
+
 /* ____________________responsive___________________ */
 @media only screen and (max-width: 1189px) {
 
@@ -596,29 +770,50 @@ rgba(235, 243, 245, 1);
     .masks-p {
         margin-bottom: 0;
     }
+
     .services-sections-container::after {
         width: 100px;
         height: 100px;
     }
-    .services-up-txt,.services-down-txt{
+
+    .services-up-txt,
+    .services-down-txt {
         max-width: 42%;
     }
-    .services-down-txt{
+
+    .services-down-txt {
         margin-top: 0;
     }
-    .masks::after{
+
+    .masks::after {
         content: ' .................................. ';
     }
-    .full-body::after{
+
+    .full-body::after {
         content: " ...................... ";
     }
-    .geothermal::after{
+
+    .geothermal::after {
         content: ' ........................... ';
     }
-    .sauna::after{
+
+    .sauna::after {
         content: ' ................................... ';
     }
 
+    /* benefits */
+    .benefits-content {
+        gap: 15px;
+    }
+
+    .benefits {
+        max-width: 240px;
+    }
+
+    .benefits h3 {
+        max-width: 90%;
+
+    }
 }
 
 @media only screen and (max-width: 1111px) {
@@ -652,6 +847,10 @@ rgba(235, 243, 245, 1);
     .beauty-left-content {
         margin-left: 40px;
         max-width: 400px;
+    }
+
+    .quote-icon {
+        width: 60px;
     }
 
 }
@@ -743,6 +942,19 @@ rgba(235, 243, 245, 1);
     .about-left {
         max-width: 45%;
     }
+
+    .quote-icon {
+        width: 40px;
+    }
+
+    /* benefits */
+    .benefits {
+        max-width: 31%;
+    }
+
+    .benefits-content {
+        gap: 25px;
+    }
 }
 
 @media only screen and (max-width: 870px) {
@@ -755,6 +967,15 @@ rgba(235, 243, 245, 1);
     }
 
     .about-right {
+        max-width: 40%;
+    }
+
+    .testimonials-down {
+        padding: 20px;
+    }
+
+    /* benefits */
+    .benefits {
         max-width: 40%;
     }
 }
@@ -805,7 +1026,7 @@ rgba(235, 243, 245, 1);
         padding: 0;
         opacity: 0;
         visibility: hidden;
-        transition: 0.7s all ease-in-out;
+        transition: 0.5s all ease-in-out;
         gap: 10px;
         z-index: 100;
         justify-content: space-evenly;
@@ -866,9 +1087,26 @@ rgba(235, 243, 245, 1);
 
 
     /* beauty is start */
+    .card-container {
+        gap: 20px;
+        text-align: center;
+    }
+
+    .btn-empty {
+        align-self: center;
+    }
+
+    .beauty-card {
+        min-width: 90%;
+    }
+
     .beauty-is-left,
     .beauty-is-right {
         padding: unset;
+    }
+
+    .beauty-card-txt p {
+        line-height: 1.5;
     }
 
     .white-border::before {
@@ -896,6 +1134,23 @@ rgba(235, 243, 245, 1);
         inset: 0;
     }
 
+    .testimonials-content {
+        flex-direction: column;
+    }
+
+    .testimonials-up p {
+        text-align: justify;
+    }
+
+    .testimonials-1,
+    .testimonials-2 {
+        min-width: 90%;
+    }
+
+    /* benefits */
+    .benefits {
+        max-width: 46%;
+    }
 }
 
 /* Mobile */
@@ -1041,15 +1296,39 @@ rgba(235, 243, 245, 1);
     .btn-empty {
         min-width: 80%;
     }
+
+    /* beauty is end */
+
+    /* benefits */
+    .benefits {
+        max-width: 90%;
+        align-items: center;
+    }
+
+    .benefits-content {
+        justify-content: center;
+    }
+
+    .benefits h3,
+    p {
+        text-align: center;
+    }
 }
 
-/* beauty is end */
 
 
 
 @media only screen and (max-width: 470px) {
     .container {
         max-width: 320px;
+    }
+
+    .quote-icon {
+        width: 20px;
+    }
+
+    .testimonials-down-left {
+        gap: 6px;
     }
 }
 
@@ -1059,6 +1338,10 @@ rgba(235, 243, 245, 1);
     }
 
     /* beauty start */
+    .beauty-card {
+        min-width: 100%;
+    }
+
     .beauty-left-content {
         max-width: 100%;
     }
@@ -1084,6 +1367,32 @@ rgba(235, 243, 245, 1);
     .about-left-card {
         width: 100%;
         padding-top: 10px;
+    }
+
+    /* testimonials */
+    .testimonials-down {
+        justify-content: center;
+    }
+
+    .testimonials-down-left {
+        flex-direction: column;
+    }
+
+    .testimonials-quote {
+        text-align: center;
+    }
+
+    .testimonials-1,
+    .testimonials-2 {
+        min-width: 100%;
+    }
+
+    .stars {
+        justify-content: center;
+    }
+
+    .quote-icon {
+        display: none;
     }
 }
 
