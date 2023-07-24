@@ -27,7 +27,7 @@ h3 {
     font-family: PlayfairDisplay-Bold, serif !important;
 }
 
-h2{
+h2 {
     font-size: 2rem;
 }
 
@@ -117,6 +117,7 @@ header {
     padding: 30px 40px;
     margin: 0 auto;
     transition: all 1.2s ease-in-out;
+    border-bottom: 0.5px solid rgba(92, 134, 146, 0.3);
 }
 
 header.fixed {
@@ -676,59 +677,116 @@ h4 {
     max-width: 50%;
     gap: 10px;
 }
-.discount-left h2{
+
+.discount-left h2 {
     width: 60%;
     line-height: 1.5;
     margin-bottom: 0;
 }
 
-.discount-card{
-max-width: 90%;
-border: 1px solid rgba(149, 191, 203, 1);
-background-color: white;
-gap: 10px;
+.discount-card {
+    max-width: 90%;
+    border: 1px solid rgba(149, 191, 203, 1);
+    background-color: white;
+    gap: 10px;
 }
-.discount-card-left{
+
+.discount-card-left {
     padding: 5px;
 }
 
-.discount-card-right{
+.discount-card-right {
     color: white;
     padding: 20px 40px;
 }
 
-.number-50{
-margin: 15px 0;
-font-size: 50px;
-font-weight: 900;
+.number-50 {
+    margin: 15px 0;
+    font-size: 50px;
+    font-weight: 900;
 }
-.number-50 span{
+
+.number-50::after {
+    content: '%';
     font-size: 30px;
     font-weight: 100;
-    }
-.discount-mailUs,.discount-callUs{
+}
+
+.discount-mailUs,
+.discount-callUs {
     position: relative;
 }
-.discount-card-left-up *,.discount-card-left-down *{
+
+.discount-card-left-up *,
+.discount-card-left-down * {
     padding-left: 30px;
     margin-left: 20px;
 }
 
-.discount-mailUs::before,.discount-callUs::before{
-content: '...';
-display: inline-block;
-color: rgba(92, 134, 146, 1);
-font-size: 30px;
-font-family: serif;
-position: absolute;
-top: -16px;
-left: 0;
+.discount-mailUs::before,
+.discount-callUs::before {
+    content: '...';
+    display: inline-block;
+    color: rgba(92, 134, 146, 1);
+    font-size: 30px;
+    font-family: serif;
+    position: absolute;
+    top: -16px;
+    left: 0;
 }
+
 /*  */
-.discount-right{
-    max-width: 50%;
+.discount-right {
+    min-width: 40%;
+    min-height: 564px;
     background-color: white;
+    padding: 50px 65px;
+    justify-content: center;
 }
+
+input,
+textarea,
+.discount-btn {
+    outline: none;
+    border: 1px solid rgba(92, 134, 146, 1);
+    padding: 15px 10px 15px 35px;
+    width: 100%;
+}
+
+.discount-input-container svg {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.discount-input-container {
+    position: relative;
+    width: 100%;
+}
+
+::placeholder {
+    font-size: 13px;
+}
+
+.discount-btn {
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    background-color: rgba(92, 134, 146, 1);
+    padding: 15px;
+    max-width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+.discount-form {
+    gap: 13px;
+}
+
 /* discount end */
 
 /* ____________________responsive___________________ */
@@ -894,6 +952,9 @@ left: 0;
     .beauty-left-content p {
         margin: 0;
     }
+    .beauty-left-content a{
+        min-width: 65%;
+    }
 
     /* beauty */
     .about-left-txt h2 {
@@ -906,6 +967,16 @@ left: 0;
 
     .about-right {
         max-width: 50%;
+    }
+    /* discount */
+    .discount-card-left-up *, .discount-card-left-down *{
+        margin-left: 0;
+    }
+    .discount-card{
+        gap: 0;
+    }
+    .discount-card-right {
+        padding: 12px 30px;
     }
 
 }
@@ -955,6 +1026,13 @@ left: 0;
     .benefits-content {
         gap: 25px;
     }
+    /* discount */
+.discount-card-left-up p,.discount-card-left-down p{
+    padding-left: 10px;
+}
+.discount-container{
+    gap: 30px;
+}
 }
 
 @media only screen and (max-width: 870px) {
@@ -977,6 +1055,16 @@ left: 0;
     /* benefits */
     .benefits {
         max-width: 40%;
+    }
+    /* discount */
+    .discount-left h2{
+        min-width: 85%;
+    }
+    .discount-right{
+        min-width: 50%;
+    }
+    .discount-card{
+        min-width: 100%;
     }
 }
 
@@ -1124,6 +1212,7 @@ left: 0;
         height: 100%;
     }
 
+
     /* beauty is end */
     /* about */
     .about-left-txt {
@@ -1151,6 +1240,39 @@ left: 0;
     .benefits {
         max-width: 46%;
     }
+    /* discount */
+    .discount-container{
+        flex-direction: column;
+    }
+    .discount-left,.discount-right{
+        min-width: 100%;
+    }
+    .discount-left *{
+       text-align: center;
+    }
+    .discount-left{
+        align-items: center;
+    }
+    .discount-left p{
+        text-align: justify;
+    }
+    .discount-card-left-up,.discount-card-left-down{
+display: flex;
+align-items: center;
+    }
+    .discount-card-left{
+        margin-left: 50px;
+        gap: 10px;
+    }
+    .discount-card-right{
+        padding: 8px 50px;
+    }
+    .discount-input-container svg{
+        left: 15px;
+    }
+    input,textarea{
+        padding-left: 45px;
+    }
 }
 
 /* Mobile */
@@ -1174,7 +1296,9 @@ left: 0;
     .btn-empty {
         align-self: center;
     }
-
+    .beauty-left-content a{
+        min-width: 70%;
+    }
     /* about */
     .about-left {
         min-width: 100%;
@@ -1186,6 +1310,19 @@ left: 0;
 
     .about-right {
         display: none;
+    }
+    /* discount */
+    .discount-card-left{
+        margin-left: 0;
+    }
+    .discount-card-right{
+        padding: 5px 10px;
+    }
+    .discount-card-left p{
+        padding-left: 0;
+    }
+    .discount-right{
+        min-height: auto;
     }
 }
 
@@ -1330,6 +1467,22 @@ left: 0;
     .testimonials-down-left {
         gap: 6px;
     }
+    /* discount */
+    .discount-card-left-up, .discount-card-left-down {
+        display: block;
+    }
+    .discount-left *{
+        text-align: unset;
+    }
+    .discount-card-left{
+        gap: 0;
+    }
+    .discount-card-right{
+        padding: 12px 22px;
+    }
+    .discount-right{
+        padding: 40px;
+    }
 }
 
 @media only screen and (max-width: 370px) {
@@ -1394,6 +1547,19 @@ left: 0;
     .quote-icon {
         display: none;
     }
-}
+    /* beauty end */
 
-/* beauty end */
+    /* discount */
+    .discount-left h2{
+        width: 100%;
+    }
+    .discount-card-left p,.discount-card-right h4{
+font-size: small;
+    }
+    .discount-card-right{
+        padding: 20px 14px;
+    }
+    .number-50{
+        font-size: 40px;
+    }
+}
