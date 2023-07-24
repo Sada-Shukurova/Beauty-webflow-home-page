@@ -952,7 +952,8 @@ textarea {
     .beauty-left-content p {
         margin: 0;
     }
-    .beauty-left-content a{
+
+    .beauty-left-content a {
         min-width: 65%;
     }
 
@@ -968,13 +969,17 @@ textarea {
     .about-right {
         max-width: 50%;
     }
+
     /* discount */
-    .discount-card-left-up *, .discount-card-left-down *{
+    .discount-card-left-up *,
+    .discount-card-left-down * {
         margin-left: 0;
     }
-    .discount-card{
+
+    .discount-card {
         gap: 0;
     }
+
     .discount-card-right {
         padding: 12px 30px;
     }
@@ -1026,13 +1031,16 @@ textarea {
     .benefits-content {
         gap: 25px;
     }
+
     /* discount */
-.discount-card-left-up p,.discount-card-left-down p{
-    padding-left: 10px;
-}
-.discount-container{
-    gap: 30px;
-}
+    .discount-card-left-up p,
+    .discount-card-left-down p {
+        padding-left: 10px;
+    }
+
+    .discount-container {
+        gap: 30px;
+    }
 }
 
 @media only screen and (max-width: 870px) {
@@ -1056,14 +1064,17 @@ textarea {
     .benefits {
         max-width: 40%;
     }
+
     /* discount */
-    .discount-left h2{
+    .discount-left h2 {
         min-width: 85%;
     }
-    .discount-right{
+
+    .discount-right {
         min-width: 50%;
     }
-    .discount-card{
+
+    .discount-card {
         min-width: 100%;
     }
 }
@@ -1240,37 +1251,50 @@ textarea {
     .benefits {
         max-width: 46%;
     }
+
     /* discount */
-    .discount-container{
+    .discount-container {
         flex-direction: column;
     }
-    .discount-left,.discount-right{
+
+    .discount-left,
+    .discount-right {
         min-width: 100%;
     }
-    .discount-left *{
-       text-align: center;
+
+    .discount-left * {
+        text-align: center;
     }
-    .discount-left{
+
+    .discount-left {
         align-items: center;
     }
-    .discount-left p{
+
+    .discount-left p {
         text-align: justify;
     }
-    .discount-card-left-up,.discount-card-left-down{
-display: flex;
-align-items: center;
+
+    .discount-card-left-up,
+    .discount-card-left-down {
+        display: flex;
+        align-items: center;
     }
-    .discount-card-left{
+
+    .discount-card-left {
         margin-left: 50px;
         gap: 10px;
     }
-    .discount-card-right{
+
+    .discount-card-right {
         padding: 8px 50px;
     }
-    .discount-input-container svg{
+
+    .discount-input-container svg {
         left: 15px;
     }
-    input,textarea{
+
+    input,
+    textarea {
         padding-left: 45px;
     }
 }
@@ -1296,9 +1320,11 @@ align-items: center;
     .btn-empty {
         align-self: center;
     }
-    .beauty-left-content a{
+
+    .beauty-left-content a {
         min-width: 70%;
     }
+
     /* about */
     .about-left {
         min-width: 100%;
@@ -1311,17 +1337,21 @@ align-items: center;
     .about-right {
         display: none;
     }
+
     /* discount */
-    .discount-card-left{
+    .discount-card-left {
         margin-left: 0;
     }
-    .discount-card-right{
+
+    .discount-card-right {
         padding: 5px 10px;
     }
-    .discount-card-left p{
+
+    .discount-card-left p {
         padding-left: 0;
     }
-    .discount-right{
+
+    .discount-right {
         min-height: auto;
     }
 }
@@ -1467,20 +1497,26 @@ align-items: center;
     .testimonials-down-left {
         gap: 6px;
     }
+
     /* discount */
-    .discount-card-left-up, .discount-card-left-down {
+    .discount-card-left-up,
+    .discount-card-left-down {
         display: block;
     }
-    .discount-left *{
+
+    .discount-left * {
         text-align: unset;
     }
-    .discount-card-left{
+
+    .discount-card-left {
         gap: 0;
     }
-    .discount-card-right{
+
+    .discount-card-right {
         padding: 12px 22px;
     }
-    .discount-right{
+
+    .discount-right {
         padding: 40px;
     }
 }
@@ -1547,19 +1583,24 @@ align-items: center;
     .quote-icon {
         display: none;
     }
+
     /* beauty end */
 
     /* discount */
-    .discount-left h2{
+    .discount-left h2 {
         width: 100%;
     }
-    .discount-card-left p,.discount-card-right h4{
-font-size: small;
+
+    .discount-card-left p,
+    .discount-card-right h4 {
+        font-size: small;
     }
-    .discount-card-right{
+
+    .discount-card-right {
         padding: 20px 14px;
     }
-    .number-50{
+
+    .number-50 {
         font-size: 40px;
     }
 }
