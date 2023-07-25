@@ -480,6 +480,12 @@ header.fixed {
 
 .services-up-img img {
     width: 100%;
+    height: 100%;
+}
+
+.services-down-img img {
+    width: 100%;
+    height: 100%;
 }
 
 .services-up-txt {
@@ -550,7 +556,6 @@ header.fixed {
     z-index: 99;
     margin-top: 40px;
 }
-
 
 
 .services-sections-container::after {
@@ -753,6 +758,12 @@ textarea,
     width: 100%;
 }
 
+input:focus,
+textarea:focus {
+    background-color: rgba(92, 134, 146, 0.1);
+    font-weight: bold;
+}
+
 .discount-input-container svg {
     position: absolute;
     top: 15px;
@@ -777,8 +788,15 @@ textarea,
     background-color: rgba(92, 134, 146, 1);
     padding: 15px;
     max-width: 100%;
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s ease-in-out;
 }
-
+.discount-btn:hover{
+    color: black;
+    font-weight: bold;
+    background-color: rgba(92, 134, 146, 0.6);
+}
 textarea {
     resize: none;
 }
@@ -789,6 +807,125 @@ textarea {
 
 /* discount end */
 
+
+/* blog section start */
+.blog-section {
+    padding: 40px 0;
+}
+
+.blogs-container {
+    gap: 20px;
+}
+
+.blog-txt {
+    text-align: center;
+}
+
+.blog-content {
+    gap: 30px;
+}
+
+.blog-card {
+    max-width: 320px;
+}
+
+.blog-card img {
+    width: 100%;
+}
+
+.blog-card-txt {
+    padding: 30px;
+}
+
+.blog-title {
+    font-size: 13px;
+    font-weight: bold;
+    gap: 25px;
+}
+
+.blog-author {
+    position: relative;
+}
+
+.blog-author::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 1.5px;
+    background-color: rgba(39, 45, 50, 1);
+    top: 7px;
+    left: -20px;
+}
+
+.blog-txt-heading {
+    margin: 0;
+}
+
+.blog-card-txt p.gray {
+    margin-top: 5px;
+}
+
+.blog-card {
+    position: relative;
+}
+
+.blog-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.blog-card a {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.blog-btn {
+    margin: 30px 0;
+}
+
+/* blog section end */
+
+/* footer start */
+footer {
+    padding: 30px 0;
+}
+.footer-container{
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.436);
+}
+
+.footer-logo-name {
+    color: white;
+}
+.footer-right{
+    gap: 10px;
+}
+.footer-right a svg path{
+    fill: white;
+}
+.footer-right a{
+    border: 1px solid rgba(92, 134, 146, 1);
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.footer-pages-container{
+    padding: 30px 0;
+}
+.footer-pages-container *{
+    color: white;
+}
+.footer-pages-container a:hover{
+    text-shadow: 1px 1px 1px rgba(237, 245, 247, 1);
+}
+.inTouch-content *{
+    display: inline-block;
+}
+
+
+/* footer end */
 /* ____________________responsive___________________ */
 @media only screen and (max-width: 1189px) {
 
@@ -820,14 +957,7 @@ textarea {
     /* header and navigation end */
 
     /* services */
-    .services-up-txt,
-    .services-down-txt {
-        max-height: 500px;
-    }
 
-    .masks-p {
-        margin-bottom: 0;
-    }
 
     .services-sections-container::after {
         width: 100px;
@@ -836,11 +966,10 @@ textarea {
 
     .services-up-txt,
     .services-down-txt {
-        max-width: 42%;
-    }
-
-    .services-down-txt {
-        margin-top: 0;
+        max-width: 50%;
+        min-height: 600px;
+        gap: 30px;
+        align-items: center;
     }
 
     .masks::after {
@@ -859,6 +988,14 @@ textarea {
         content: ' ................................... ';
     }
 
+    .appointment {
+        width: 100%;
+    }
+
+    .services-sections-container::after {
+        top: 48.8%;
+    }
+
     /* benefits */
     .benefits-content {
         gap: 15px;
@@ -871,6 +1008,15 @@ textarea {
     .benefits h3 {
         max-width: 90%;
 
+    }
+
+    /* blog */
+    .blog-card-txt {
+        padding: 20px;
+    }
+
+    .blog-author::before {
+        width: 12px;
     }
 }
 
@@ -909,6 +1055,29 @@ textarea {
 
     .quote-icon {
         width: 60px;
+    }
+
+    /* services */
+    .services-heading h2 {
+        min-width: 100%;
+    }
+
+    .services-down-txt {
+        gap: 23px;
+    }
+
+    .services-sections-container::after {
+        top: 49.4%;
+    }
+
+    /* blog */
+    .blog-title {
+        gap: 15px;
+    }
+
+    .blog-author::before {
+        width: 10px;
+        left: -13px;
     }
 
 }
@@ -970,6 +1139,16 @@ textarea {
         max-width: 50%;
     }
 
+    /* services */
+    .services-up,
+    .services-down {
+        gap: 15px;
+    }
+
+    .sauna::after {
+        content: "..................................";
+    }
+
     /* discount */
     .discount-card-left-up *,
     .discount-card-left-down * {
@@ -984,6 +1163,10 @@ textarea {
         padding: 12px 30px;
     }
 
+    /* blog */
+    .blog-card {
+        min-width: 260px;
+    }
 }
 
 @media only screen and (max-width: 925px) {
@@ -1023,6 +1206,20 @@ textarea {
         width: 40px;
     }
 
+    /* services */
+    .services-up-txt,
+    .services-down-txt {
+        min-width: 52%;
+    }
+
+    .services-sections-container::after {
+        display: none;
+    }
+
+    .services-sections-container {
+        gap: 30px;
+    }
+
     /* benefits */
     .benefits {
         max-width: 31%;
@@ -1040,6 +1237,15 @@ textarea {
 
     .discount-container {
         gap: 30px;
+    }
+
+    /* blog */
+    .blog-card {
+        min-width: 263px;
+    }
+
+    .blog-card-txt {
+        padding: 15px;
     }
 }
 
@@ -1065,6 +1271,32 @@ textarea {
         max-width: 40%;
     }
 
+    /* services */
+    .services-up-txt,
+    .services-down-txt {
+        min-width: 52%;
+    }
+
+    .masks::after {
+        content: ' ......................... ';
+    }
+
+    .full-body::after {
+        content: "............. ";
+    }
+
+    .geothermal::after {
+        content: "..................";
+    }
+
+    .sauna::after {
+        content: "........................";
+    }
+
+    .masks-p {
+        line-height: 1.5;
+    }
+
     /* discount */
     .discount-left h2 {
         min-width: 85%;
@@ -1077,6 +1309,24 @@ textarea {
     .discount-card {
         min-width: 100%;
     }
+
+    .discount-card-right {
+        padding: 3px 30px;
+    }
+
+    .discount-right {
+        min-height: 579px;
+    }
+
+    /* blog */
+    .blog-card {
+        min-width: 240px;
+    }
+
+    .blog-content {
+        flex-wrap: wrap;
+    }
+
 }
 
 /* Tablet */
@@ -1252,6 +1502,43 @@ textarea {
         max-width: 46%;
     }
 
+    /* 
+services */
+    .services-heading .blue {
+        margin-bottom: 20px;
+    }
+
+    .services-up-img,
+    .services-down-img {
+        display: none;
+    }
+
+    .services-up-txt,
+    .services-down-txt {
+        min-width: 100%;
+    }
+
+    .masks::after {
+        content: ' ............................................. ';
+    }
+
+    .full-body::after {
+        content: ' .................................. ';
+    }
+
+    .geothermal::after {
+        content: ' ....................................... ';
+    }
+
+    .sauna::after {
+        content: ' .............................................. ';
+    }
+
+    .services-down-txt {
+        border-top: 1px solid rgba(155, 183, 191, 1);
+        padding-top: 40px;
+    }
+
     /* discount */
     .discount-container {
         flex-direction: column;
@@ -1296,6 +1583,11 @@ textarea {
     input,
     textarea {
         padding-left: 45px;
+    }
+
+    /* blog */
+    .blog-card {
+        max-width: 270px;
     }
 }
 
@@ -1353,6 +1645,28 @@ textarea {
 
     .discount-right {
         min-height: auto;
+    }
+
+    /* blog */
+    .blog-card {
+        min-width: 100%;
+    }
+
+    .blog-title {
+        gap: 20px;
+    }
+
+    .blog-card-txt p.gray {
+        text-align: center;
+    }
+
+    .blog-author::before {
+        left: -14px;
+
+    }
+
+    .blog-txt-heading {
+        text-align: center;
     }
 }
 
@@ -1466,6 +1780,26 @@ textarea {
 
     /* beauty is end */
 
+    /* services */
+
+    .masks::after {
+        content: ' ................................... ';
+    }
+
+    .full-body::after {
+        content: ' ........................ ';
+    }
+
+    .geothermal::after {
+        content: ' ............................. ';
+    }
+
+    .sauna::after {
+        content: ' .................................... ';
+    }
+    .first-line p{
+        text-align: left;
+    }
     /* benefits */
     .benefits {
         max-width: 90%;
@@ -1497,7 +1831,22 @@ textarea {
     .testimonials-down-left {
         gap: 6px;
     }
+/* services */
+.masks::after {
+    content: ' .................... ';
+}
 
+.full-body::after {
+    content: ' ......... ';
+}
+
+.geothermal::after {
+    content: ' ............ ';
+}
+
+.sauna::after {
+    content: ' ................... ';
+}
     /* discount */
     .discount-card-left-up,
     .discount-card-left-down {
@@ -1557,7 +1906,29 @@ textarea {
         width: 100%;
         padding-top: 10px;
     }
+/* services */
+.first-up{
+    flex-direction: column;
+}
+.first-up h3{
+    margin-bottom: 0;
+}
+.first-up p.gray{
+    margin-left: 50%;
+}
 
+.masks::after{
+    content: ' : ';
+}
+.full-body::after{
+    content: ' : ';
+}
+.geothermal::after{
+    content: ' : ';
+}
+.sauna::after{
+    content: ' : ';
+}
     /* testimonials */
     .testimonials-down {
         justify-content: center;
@@ -1602,5 +1973,10 @@ textarea {
 
     .number-50 {
         font-size: 40px;
+    }
+
+    /* blog */
+    .blog-author::before {
+        top: 16px;
     }
 }
