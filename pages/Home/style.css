@@ -197,12 +197,12 @@ header {
 .navigation li:hover a {
     color: rgba(92, 134, 146, 1);
     text-decoration: underline;
-    text-shadow: 1px 1px 1px rgb(53, 81, 89);
+    text-shadow: 0.5px 0.5px 1px rgb(53, 81, 89);
 }
 .navigation li:hover .dropdown-span{
     color: rgba(92, 134, 146, 1);
     text-decoration: underline;
-    text-shadow: 1px 1px 1px rgb(53, 81, 89);
+    text-shadow: 0.5px 0.5px 1px rgb(53, 81, 89);
 }
 
 .navigation li:hover .pages-dropdown a{
@@ -211,7 +211,7 @@ header {
 }
 .navigation li .pages-dropdown a:hover{
     text-decoration: underline;
-    text-shadow: 1px 1px 1px rgb(53, 81, 89);
+    text-shadow: 0.5px 0.5px 1px rgb(53, 81, 89);
 }
 
 .dropdown {
@@ -298,6 +298,10 @@ header {
 
 .menu-social-icons:hover {
     filter: drop-shadow(5px 1px 8px rgb(41, 59, 65));
+}
+
+.active-page{
+    font-weight: bold;
 }
 
 /* navigation end */
@@ -1010,7 +1014,7 @@ footer {
     transition: 0.5s all ease-in-out;
 }
 .footer-pages-container a:hover {
-    text-shadow: 1px 1px 1px rgba(237, 245, 247, 1);
+    text-shadow: 0.5px 0.5px 1px rgba(237, 245, 247, 1);
     text-decoration: underline;
 }
 
@@ -1594,7 +1598,7 @@ footer {
     }
     .navigation .dropdown-open .pages-dropdown a:hover{
         text-decoration: underline;
-        text-shadow: 1px 1px 1px rgb(43, 54, 57);
+        text-shadow: 0.5px 0.5px 1px rgb(43, 54, 57);
     }
     .navigation li:hover .dropdown-open .pages-dropdown a{
         text-shadow: none;
