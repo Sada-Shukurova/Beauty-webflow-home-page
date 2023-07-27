@@ -114,7 +114,7 @@ a {
 
 /* header start */
 header {
-    padding: 30px 40px;
+    padding: 5px 68px;
     margin: 0 auto;
     transition: all 0.5s ease-in-out;
     border-bottom: 0.5px solid rgba(92, 134, 146, 0.3);
@@ -131,6 +131,7 @@ header {
 .header-container {
     gap: 20px;
     width: 100%;
+    padding-left: 55px;
 }
 
 .logoAndNumber {
@@ -159,7 +160,8 @@ header {
     gap: 10px;
     width: 200px;
 }
-.number-container:hover h5 a{
+
+.number-container:hover h5 a {
     color: rgb(69, 100, 108);
     text-decoration: underline;
 }
@@ -174,6 +176,7 @@ header {
 .nav-container {
     width: 100%;
     gap: 25px;
+    padding-right: 55px;
 }
 
 .navigation {
@@ -190,26 +193,30 @@ header {
     color: rgba(85, 85, 85, 1);
     transition: 0.3s all ease-in-out;
 }
-.navigation li .pages-dropdown a{
+
+.navigation li .pages-dropdown a {
     color: rgba(85, 85, 85, 1);
     transition: 0.3s all ease-in-out;
 }
+
 .navigation li:hover a {
     color: rgba(92, 134, 146, 1);
     text-decoration: underline;
     text-shadow: 0.5px 0.5px 1px rgb(53, 81, 89);
 }
-.navigation li:hover .dropdown-span{
+
+.navigation li:hover .dropdown-span {
     color: rgba(92, 134, 146, 1);
     text-decoration: underline;
     text-shadow: 0.5px 0.5px 1px rgb(53, 81, 89);
 }
 
-.navigation li:hover .pages-dropdown a{
+.navigation li:hover .pages-dropdown a {
     text-decoration: none;
     text-shadow: none;
 }
-.navigation li .pages-dropdown a:hover{
+
+.navigation li .pages-dropdown a:hover {
     text-decoration: underline;
     text-shadow: 0.5px 0.5px 1px rgb(53, 81, 89);
 }
@@ -221,18 +228,18 @@ header {
 
 .pages-dropdown {
     position: absolute;
-    top: 250%;
-    left: 0%;
+    top: 230%;
+    left: -80%;
     list-style: none;
     background-color: #fff;
     clip-path: inset(0 0 100% 0);
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 40px;
-    padding: 40px 70px;
+    padding: 20px 30px;
 }
 
 .pages-dropdown a {
@@ -276,9 +283,7 @@ header {
 }
 
 .reservation:hover {
-    color: black;
-    font-weight: bold;
-    background-color: rgba(122, 156, 165, 0.7);
+    background-color: rgba(30, 44, 48, 1);
 }
 
 #menu {
@@ -300,8 +305,9 @@ header {
     filter: drop-shadow(5px 1px 8px rgb(41, 59, 65));
 }
 
-.active-page{
+.active-page {
     font-weight: bold;
+    text-decoration: underline;
 }
 
 /* navigation end */
@@ -311,7 +317,7 @@ header {
 
 /* left */
 .beauty-is-container {
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 .beauty-is-left,
@@ -361,9 +367,7 @@ header {
 }
 
 .btn-dark:hover {
-    color: black;
-    font-weight: bold;
-    background-color: rgba(92, 134, 146, 0.6);
+    background-color: rgba(30, 44, 48, 1);
 }
 
 /* right */
@@ -454,6 +458,7 @@ header {
 }
 
 .btn-empty:hover {
+    color: white;
     background-color: rgba(92, 134, 146, 1);
 }
 
@@ -876,9 +881,7 @@ textarea:focus {
 }
 
 .discount-btn:hover {
-    color: black;
-    font-weight: bold;
-    background-color: rgba(92, 134, 146, 0.6);
+    background-color: rgba(30, 44, 48, 1);
 }
 
 textarea {
@@ -998,10 +1001,12 @@ footer {
     height: 40px;
     text-align: center;
 }
+
 .footer-right a:hover {
     box-shadow: 0 0 6px 0 white;
     border: transparent;
 }
+
 .footer-pages-container {
     padding: 30px 0;
 
@@ -1010,9 +1015,11 @@ footer {
 .footer-pages-container * {
     color: white;
 }
-.footer-pages-container a{
+
+.footer-pages-container a {
     transition: 0.5s all ease-in-out;
 }
+
 .footer-pages-container a:hover {
     text-shadow: 0.5px 0.5px 1px rgba(237, 245, 247, 1);
     text-decoration: underline;
@@ -1075,15 +1082,24 @@ footer {
     }
 
     header {
-        padding: 20px 30px;
+        padding: 5px 30px;
+    }
+
+    .header-container {
+        padding-left: 30px;
     }
 
     .nav-container {
         gap: 20px;
+        padding-right: 30px;
     }
 
     .navigation {
         gap: 20px;
+    }
+
+    .number-container {
+        display: none;
     }
 
     .social-container {
@@ -1092,10 +1108,6 @@ footer {
 
     .btn {
         padding: 10px 20px;
-    }
-
-    .beauty-is-container {
-        padding-top: 130px;
     }
 
     /* header and navigation end */
@@ -1171,10 +1183,6 @@ footer {
         max-width: 900px;
     }
 
-    .header-container {
-        gap: 8px;
-    }
-
     .logoAndNumber {
         gap: 10px;
     }
@@ -1194,7 +1202,6 @@ footer {
     /* header and navigation end */
 
     .beauty-left-content {
-        margin-left: 40px;
         max-width: 400px;
     }
 
@@ -1236,7 +1243,14 @@ footer {
     header {
         flex-direction: column;
         align-items: center;
-        padding: 20px 30px;
+    }
+
+    .header-container {
+        padding-left: 0;
+    }
+
+    .nav-container {
+        padding-right: 0;
     }
 
     .logoAndNumber {
@@ -1261,6 +1275,7 @@ footer {
 
     .beauty-left-content {
         max-width: 300px;
+        margin-left: 70px;
     }
 
     .beauty-left-content p {
@@ -1503,6 +1518,7 @@ footer {
     .dropdown-span {
         color: white;
     }
+
     .dropdown-span svg path {
         stroke: white;
     }
@@ -1531,16 +1547,20 @@ footer {
     .dropdown:hover .dropdown ul {
         clip-path: none;
     }
-    .navigation li:hover .dropdown-span{
+
+    .navigation li:hover .dropdown-span {
         color: white;
     }
+
     .dropdown-open .dropdown-span:hover .dropdown-open .pages-dropdown a {
         text-decoration: none;
         text-shadow: none;
     }
-    .dropdown-open .pages-dropdown a:hover{
+
+    .dropdown-open .pages-dropdown a:hover {
         text-decoration: underline;
     }
+
     .nav-container {
         margin-top: 64px;
         height: 100%;
@@ -1550,7 +1570,7 @@ footer {
     #menu {
         display: block;
         position: absolute;
-        top: 60%;
+        top: 30%;
         right: 5%;
         z-index: 99;
     }
@@ -1589,26 +1609,30 @@ footer {
         gap: 25px;
     }
 
-    .navigation li a{
+    .navigation li a {
         color: white;
     }
+
     .navigation li:hover .dropdown-span svg path {
         stroke: white;
         ;
     }
-    .navigation .dropdown-open .pages-dropdown a:hover{
+
+    .navigation .dropdown-open .pages-dropdown a:hover {
         text-decoration: underline;
         text-shadow: 0.5px 0.5px 1px rgb(43, 54, 57);
     }
-    .navigation li:hover .dropdown-open .pages-dropdown a{
+
+    .navigation li:hover .dropdown-open .pages-dropdown a {
         text-shadow: none;
     }
+
     .menu-active {
         width: 50%;
         opacity: 1;
         visibility: visible;
         padding: 10px 40px 60px 40px;
-        margin-top: 87px;
+        margin-top: 57px;
         transform: translateX(0);
     }
 
@@ -1625,7 +1649,7 @@ footer {
         margin: 0;
     }
 
-    .navigation li:hover a{
+    .navigation li:hover a {
         color: white;
     }
 
@@ -1645,6 +1669,10 @@ footer {
 
     h5 {
         margin: 0;
+    }
+
+    .number-container {
+        display: none;
     }
 
     /* header and navigation end */
@@ -1701,6 +1729,7 @@ footer {
 
     .testimonials-content {
         flex-direction: column;
+        align-items: center;
     }
 
     .testimonials-up p {
@@ -1825,6 +1854,10 @@ services */
         flex-direction: column;
     }
 
+    .btn-dark p {
+        text-align: center;
+    }
+
     .beauty-card {
         max-width: 450px;
     }
@@ -1932,7 +1965,7 @@ services */
         height: 90%;
         opacity: 1;
         visibility: visible;
-        margin-top: 70px;
+        margin-top: 8px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -1955,7 +1988,7 @@ services */
         flex-direction: column;
         align-items: center;
         margin-top: 10px;
-        padding-top: 150px;
+        padding-top: 100px;
     }
 
     .beauty-is-left,
@@ -2063,7 +2096,7 @@ services */
     }
 
     #menu {
-        top: 80%;
+        top: 70%;
     }
 
     .quote-icon {
@@ -2117,6 +2150,10 @@ services */
 @media only screen and (max-width: 370px) {
     .container {
         max-width: 250px;
+    }
+
+    #menu {
+        top: 60%;
     }
 
     /* beauty start */
