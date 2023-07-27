@@ -1,0 +1,306 @@
+@font-face {
+    font-family: Manrope;
+    src: url(../../assets/fonts/Manrope.ttf);
+}
+
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(../../assets/fonts/PlayfairDisplay.ttf);
+}
+
+@font-face {
+    font-family: PlayfairDisplay-Bold;
+    src: url(../../assets/fonts/PlayfairDisplay-Bold.ttf);
+}
+
+/* styles for all start */
+
+* {
+    object-fit: cover;
+    font-family: Manrope, sans-serif;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    font-family: PlayfairDisplay-Bold, serif !important;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+a {
+    color: black;
+}
+
+p.gray {
+    line-height: 2;
+}
+
+.body {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bg-light-blue {
+    background-color: rgba(235, 243, 245, 1);
+}
+
+.bg-dark-green {
+    background-color:
+        rgba(30, 44, 48, 1);
+}
+
+.blue {
+    color: rgba(92, 134, 146, 1);
+}
+
+.bg-blue {
+    background-color: rgba(92, 134, 146, 1);
+}
+
+.gray {
+    color:
+        rgba(85, 85, 85, 1);
+}
+
+.black {
+    color: black;
+}
+
+.green {
+    background-color: rgba(30, 44, 48, 1);
+}
+
+
+/* styles for all end */
+
+/* header start */
+header {
+    padding: 30px 40px;
+    margin: 0 auto;
+    transition: all 0.5s ease-in-out;
+    border-bottom: 0.5px solid rgba(92, 134, 146, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color:
+        rgba(235, 243, 245, 1);
+}
+
+
+
+.header-container {
+    gap: 20px;
+    width: 100%;
+}
+
+.logoAndNumber {
+    gap: 30px;
+}
+
+.logo-container {
+    gap: 10px;
+    position: relative;
+}
+
+.logo-container a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo-container img {
+    width: 30px;
+    height: 30px;
+}
+
+.number-container {
+    gap: 10px;
+    width: 200px;
+}
+.number-container:hover h5 a{
+    color: rgb(69, 100, 108);
+    text-decoration: underline;
+}
+
+.number-container img {
+    width: 15px;
+    height: 15px;
+}
+
+/* navigation start */
+
+.nav-container {
+    width: 100%;
+    gap: 25px;
+}
+
+.navigation {
+    gap: 30px;
+    list-style: none;
+}
+
+.navigation li a {
+    color: rgba(85, 85, 85, 1);
+    transition: 0.3s all ease-in-out;
+}
+
+.dropdown-span {
+    color: rgba(85, 85, 85, 1);
+    transition: 0.3s all ease-in-out;
+}
+.navigation li .pages-dropdown a{
+    color: rgba(85, 85, 85, 1);
+    transition: 0.3s all ease-in-out;
+}
+.navigation li:hover a {
+    color: rgba(92, 134, 146, 1);
+    text-decoration: underline;
+    text-shadow: 0.5px 0.5px 1px rgb(53, 81, 89);
+}
+.navigation li:hover .dropdown-span{
+    color: rgba(92, 134, 146, 1);
+    text-decoration: underline;
+    text-shadow: 0.5px 0.5px 1px rgb(53, 81, 89);
+}
+
+.navigation li:hover .pages-dropdown a{
+    text-decoration: none;
+    text-shadow: none;
+}
+.navigation li .pages-dropdown a:hover{
+    text-decoration: underline;
+    text-shadow: 0.5px 0.5px 1px rgb(53, 81, 89);
+}
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.pages-dropdown {
+    position: absolute;
+    top: 250%;
+    left: 0%;
+    list-style: none;
+    background-color: #fff;
+    clip-path: inset(0 0 100% 0);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 70px;
+}
+
+.pages-dropdown a {
+    display: block;
+}
+
+.dropdown .dropdown-span {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-open {
+    clip-path: inset(0 0 0 0);
+}
+
+.dropdown:hover .pages-dropdown {
+    clip-path: inset(0 0 0 0);
+}
+
+.dropdown img {
+    width: 15px;
+    height: 15px;
+}
+
+.social-container {
+    gap: 15px;
+}
+
+.btn {
+    background-color:
+        rgba(122, 156, 165, 1);
+    padding: 10px 25px;
+    color: white;
+    gap: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.reservation p {
+    display: inline-block;
+    margin: 0;
+}
+
+.reservation:hover {
+    color: black;
+    font-weight: bold;
+    background-color: rgba(122, 156, 165, 0.7);
+}
+
+#menu {
+    cursor: pointer;
+    display: none;
+}
+
+#menu-close {
+    cursor: pointer;
+    display: none;
+}
+
+#menu-close img {
+    width: 30px;
+    height: 30px;
+}
+
+.menu-social-icons:hover {
+    filter: drop-shadow(5px 1px 8px rgb(41, 59, 65));
+}
+.active-page{
+    font-weight: bold;
+}
+/* navigation end */
+/* header end */
